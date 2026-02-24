@@ -7,7 +7,7 @@ export const video: Category = {
   metaTitle: "Meilleure IA vidéo 2025 | Comparatif générateurs",
   metaDescription:
     "Comparatif des meilleures IA pour créer des vidéos en 2025 : Sora, Runway Gen-3, Kling, Pika et Veo 3. Guide complet pour choisir votre outil.",
-  icon: "🎬",
+  icon: "Clapperboard",
   description:
     "Découvrez les meilleurs outils d'intelligence artificielle pour générer et éditer des vidéos. Notre comparatif analyse les solutions qui révolutionnent la création vidéo grâce à l'IA.",
   heroDescription:

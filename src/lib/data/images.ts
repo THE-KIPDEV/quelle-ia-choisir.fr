@@ -7,7 +7,7 @@ export const images: Category = {
   metaTitle: "Meilleure IA génération images 2025 | Comparatif",
   metaDescription:
     "Comparatif des meilleures IA pour générer des images en 2025 : Midjourney, DALL-E 3, Stable Diffusion, Flux et Leonardo AI. Guide complet et avis.",
-  icon: "🎨",
+  icon: "Palette",
   description:
     "Découvrez les meilleurs outils d'intelligence artificielle pour créer des images à partir de descriptions textuelles. Notre comparatif détaillé vous aide à choisir la solution la plus adaptée à vos besoins créatifs.",
   heroDescription:

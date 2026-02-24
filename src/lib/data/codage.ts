@@ -7,7 +7,7 @@ export const codage: Category = {
   metaTitle: "Meilleure IA pour coder 2025 | Comparatif complet",
   metaDescription:
     "Comparatif des meilleures IA pour coder en 2025 : GitHub Copilot, Cursor, Claude Code, Windsurf et Cody. Guide pour choisir votre assistant de code.",
-  icon: "💻",
+  icon: "Code",
   description:
     "Découvrez les meilleurs assistants IA pour la programmation et le développement logiciel. Notre comparatif analyse les outils qui transforment la manière dont les développeurs écrivent, déboguent et optimisent leur code.",
   heroDescription:

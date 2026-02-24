@@ -7,7 +7,7 @@ export const serviceClient: Category = {
   metaTitle: "Meilleure IA Service Client 2025 | Comparatif",
   metaDescription:
     "Comparatif des meilleures IA pour le service client en 2025 : Intercom Fin, Zendesk AI, Freshdesk Freddy, Tidio et Gorgias. Guide complet et avis.",
-  icon: "\ud83c\udfa7",
+  icon: "Headset",
   description:
     "Comparez les meilleures solutions d'intelligence artificielle pour automatiser et optimiser votre service client. Chatbots, gestion de tickets, analyse de sentiments : trouvez l'outil IA adapte a vos besoins.",
   heroDescription:

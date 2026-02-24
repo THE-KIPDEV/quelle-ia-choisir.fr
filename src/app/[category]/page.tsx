@@ -9,7 +9,9 @@ import ToolCard from "@/components/ToolCard";
 import AdBanner from "@/components/AdBanner";
 import FAQ from "@/components/FAQ";
 import CategoryCard from "@/components/CategoryCard";
+import CategoryIcon from "@/components/CategoryIcon";
 import Link from "next/link";
+import { CheckCircle, ArrowLeft } from "lucide-react";
 
 export async function generateStaticParams() {
   return CATEGORIES.map((c) => ({ category: c.slug }));
@@ -70,34 +72,36 @@ export default async function CategoryPage({
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary via-primary-light to-primary text-white py-12 md:py-16">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white py-14 md:py-20 overflow-hidden">
+        <div className="absolute inset-0 hero-grid" />
+        <div className="absolute top-1/2 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2" />
+        <div className="relative max-w-4xl mx-auto px-4">
           <Breadcrumb
             items={[
               { label: "Accueil", href: "/" },
               { label: category.shortTitle },
             ]}
           />
-          <div className="flex items-center gap-4 mb-4">
-            <span className="text-5xl" aria-hidden="true">
-              {category.icon}
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+          <div className="flex items-center gap-5 mb-5">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center shadow-xl shadow-accent/25 icon-glow shrink-0">
+              <CategoryIcon name={category.icon} className="w-8 h-8 text-white" />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
               {category.title}
             </h1>
           </div>
-          <p className="text-gray-300 leading-relaxed text-lg max-w-3xl">
+          <p className="text-gray-400 leading-relaxed text-lg max-w-3xl">
             {category.heroDescription}
           </p>
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-10 md:py-14">
+      <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* Table of contents */}
         <TableOfContents tools={category.tools} />
 
         {/* Comparison table */}
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <h2 className="text-2xl font-bold text-gray-900 mb-5">
           Tableau comparatif
         </h2>
         <ComparisonTable tools={category.tools} />
@@ -116,7 +120,7 @@ export default async function CategoryPage({
         {ads.length > 1 && <AdBanner ad={ads[1]} />}
 
         {/* Selection criteria */}
-        <section id="comment-choisir" className="mt-12 scroll-mt-24">
+        <section id="comment-choisir" className="mt-14 scroll-mt-24">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Comment choisir ?
           </h2>
@@ -124,12 +128,12 @@ export default async function CategoryPage({
             {category.selectionCriteria.map((criteria, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-lg p-5"
+                className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-sm transition-shadow"
               >
                 <h3 className="font-bold text-gray-900 mb-2">
                   {criteria.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-500 leading-relaxed">
                   {criteria.description}
                 </p>
               </div>
@@ -140,26 +144,15 @@ export default async function CategoryPage({
         {/* Verdict */}
         <section
           id="verdict"
-          className="mt-12 bg-gradient-to-r from-success/5 to-success/10 border border-success/20 rounded-xl p-6 md:p-8 scroll-mt-24"
+          className="mt-14 bg-gradient-to-br from-success/5 via-success/10 to-success/5 border border-success/15 rounded-2xl p-7 md:p-9 scroll-mt-24"
         >
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            <svg
-              className="w-7 h-7 text-success"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-success to-success-light rounded-xl flex items-center justify-center shadow-lg shadow-success/20">
+              <CheckCircle className="w-5 h-5 text-white" />
+            </div>
             Notre verdict
           </h2>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-600 leading-relaxed">
             {category.recommendation}
           </p>
         </section>
@@ -171,11 +164,11 @@ export default async function CategoryPage({
 
         {/* Related categories */}
         {relatedCategories.length > 0 && (
-          <section className="mt-12">
+          <section className="mt-14">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Cat&eacute;gories connexes
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {relatedCategories.map((cat) => (
                 <CategoryCard key={cat.slug} category={cat} />
               ))}
@@ -185,8 +178,8 @@ export default async function CategoryPage({
 
         {/* CTA partenaire */}
         {ads.length > 0 && (
-          <section className="mt-12 text-center bg-gray-50 rounded-xl p-8">
-            <p className="text-gray-600 mb-3">
+          <section className="mt-14 text-center glass gradient-border rounded-2xl p-8">
+            <p className="text-gray-500 mb-4">
               Besoin d&rsquo;une solution IA ?
             </p>
             <div className="flex flex-wrap justify-center gap-3">
@@ -196,7 +189,7 @@ export default async function CategoryPage({
                   href={ad.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-accent to-accent-dark hover:from-accent-dark hover:to-accent text-white font-medium px-5 py-2.5 rounded-xl transition-all text-sm shadow-lg shadow-accent/15"
                 >
                   {ad.cta}
                 </a>
@@ -206,12 +199,13 @@ export default async function CategoryPage({
         )}
 
         {/* Back to home */}
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
           <Link
             href="/"
-            className="text-accent hover:text-accent-dark font-medium transition-colors"
+            className="inline-flex items-center gap-2 text-accent hover:text-accent-dark font-medium transition-colors"
           >
-            &larr; Retour &agrave; toutes les cat&eacute;gories
+            <ArrowLeft className="w-4 h-4" />
+            Retour &agrave; toutes les cat&eacute;gories
           </Link>
         </div>
       </div>

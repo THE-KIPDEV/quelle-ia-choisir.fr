@@ -7,7 +7,7 @@ export const marketing: Category = {
   metaTitle: "Meilleure IA Marketing 2025 : Top 5 Outils",
   metaDescription:
     "Comparatif des 5 meilleures IA marketing en 2025. HubSpot, Jasper, Canva Magic Studio, Mailchimp et Buffer AI pour optimiser vos campagnes.",
-  icon: "\ud83d\udce2",
+  icon: "Megaphone",
   description:
     "Comparez les meilleurs outils d'intelligence artificielle d\u00e9di\u00e9s au marketing digital. De la cr\u00e9ation de contenu \u00e0 l'automatisation des campagnes, ces IA optimisent chaque aspect de votre strat\u00e9gie marketing.",
   heroDescription:

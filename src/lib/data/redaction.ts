@@ -6,7 +6,7 @@ export const redaction: Category = {
   shortTitle: "IA Rédaction",
   metaTitle: "Meilleure IA pour la rédaction en 2025 | Comparatif",
   metaDescription: "Découvrez les meilleures IA de rédaction en 2025. Comparatif complet de ChatGPT, Claude, Jasper, Copy.ai et Mistral pour écrire vos contenus.",
-  icon: "\u270d\ufe0f",
+  icon: "PenLine",
   description: "Comparatif des meilleures intelligences artificielles pour la rédaction de contenus en 2025 : articles, copywriting, emails et textes professionnels.",
   heroDescription: "La rédaction assistée par intelligence artificielle a profondément transformé la manière dont les professionnels créent du contenu. Que vous soyez rédacteur web, responsable marketing, entrepreneur ou blogueur, les outils d'IA générative vous permettent aujourd'hui de produire des textes de qualité en une fraction du temps habituellement nécessaire. Mais face à la multiplication des solutions disponibles, comment choisir l'IA la plus adaptée à vos besoins rédactionnels ? Notre comparatif analyse en profondeur les cinq meilleures IA de rédaction du marché en 2025, en évaluant la qualité linguistique, la créativité, la pertinence factuelle, la maîtrise du français et le rapport qualité-prix de chaque outil. Découvrez notre analyse complète pour faire le choix le plus éclairé et booster votre productivité rédactionnelle.",
   tools: [

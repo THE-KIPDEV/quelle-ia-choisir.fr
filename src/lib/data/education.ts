@@ -7,7 +7,7 @@ export const education: Category = {
   metaTitle: "Meilleure IA \u00c9ducation 2025 : Top 5 Outils",
   metaDescription:
     "Comparatif des 5 meilleures IA pour l'\u00e9ducation en 2025. Khanmigo, Duolingo Max, Photomath, Grammarly et NotebookLM pour apprendre efficacement.",
-  icon: "\ud83c\udf93",
+  icon: "GraduationCap",
   description:
     "Comparez les meilleurs outils d'intelligence artificielle d\u00e9di\u00e9s \u00e0 l'\u00e9ducation et \u00e0 l'apprentissage. Du tutorat personnalis\u00e9 \u00e0 l'aide aux devoirs, ces IA transforment la mani\u00e8re dont nous apprenons et enseignons.",
   heroDescription:

@@ -7,7 +7,7 @@ export const productivite: Category = {
   metaTitle: "Meilleure IA Productivit\u00e9 2025 : Top 5 Outils",
   metaDescription:
     "D\u00e9couvrez les 5 meilleures IA pour booster votre productivit\u00e9 en 2025. Comparatif d\u00e9taill\u00e9 de Copilot, Gemini, Notion AI, Perplexity et Zapier AI.",
-  icon: "\u26a1",
+  icon: "Zap",
   description:
     "Comparez les meilleurs outils d'intelligence artificielle con\u00e7us pour am\u00e9liorer votre productivit\u00e9 au quotidien. De l'automatisation des t\u00e2ches r\u00e9p\u00e9titives \u00e0 la gestion intelligente de vos documents, ces IA transforment radicalement la mani\u00e8re dont nous travaillons.",
   heroDescription:

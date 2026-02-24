@@ -1,6 +1,7 @@
 import { CATEGORIES } from "@/lib/categories";
 import CategoryCard from "@/components/CategoryCard";
 import FAQ from "@/components/FAQ";
+import { CheckCircle, TrendingUp, Globe } from "lucide-react";
 
 const HOME_FAQ = [
   {
@@ -53,17 +54,21 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary via-primary-light to-primary text-white py-16 md:py-24">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-            Quelle IA choisir ?
+      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white py-20 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 hero-grid" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-warm/5 rounded-full blur-3xl" />
+        <div className="relative max-w-5xl mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+            <span className="gradient-text">Quelle IA choisir</span>
+            <span className="text-white"> ?</span>
             <br />
-            <span className="text-accent-light">
+            <span className="text-xl md:text-2xl font-medium text-gray-300 mt-4 block leading-relaxed">
               Le guide complet pour trouver l&rsquo;intelligence artificielle
               adapt&eacute;e &agrave; vos besoins
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
             Comparez les meilleurs outils d&rsquo;IA en 2025 : r&eacute;daction,
             g&eacute;n&eacute;ration d&rsquo;images, code, vid&eacute;o, SEO,
             musique et bien plus. Des analyses d&eacute;taill&eacute;es, des avis
@@ -73,16 +78,16 @@ export default function Home() {
       </section>
 
       {/* Categories Grid */}
-      <section id="categories" className="py-16 md:py-20 bg-gray-50">
+      <section id="categories" className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3">
             Explorez nos comparatifs par cat&eacute;gorie
           </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
             S&eacute;lectionnez une cat&eacute;gorie pour d&eacute;couvrir notre
             analyse compl&egrave;te des meilleurs outils IA disponibles en 2025.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CATEGORIES.map((category) => (
               <CategoryCard key={category.slug} category={category} />
             ))}
@@ -91,33 +96,21 @@ export default function Home() {
       </section>
 
       {/* Why this guide */}
-      <section className="py-16 md:py-20">
+      <section className="py-20 md:py-28 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12">
             Pourquoi ce guide ?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="text-center">
               <div
-                className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4"
+                className="w-14 h-14 bg-gradient-to-br from-accent to-accent-dark rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-accent/20"
                 aria-hidden="true"
               >
-                <svg
-                  className="w-7 h-7 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <CheckCircle className="w-7 h-7 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Analyses objectives</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-500 leading-relaxed">
                 Chaque outil est test&eacute; et &eacute;valu&eacute; selon des
                 crit&egrave;res pr&eacute;cis : qualit&eacute;, tarif, facilit&eacute;
                 d&rsquo;utilisation et support du fran&ccedil;ais.
@@ -125,27 +118,15 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div
-                className="w-14 h-14 bg-success/10 rounded-xl flex items-center justify-center mx-auto mb-4"
+                className="w-14 h-14 bg-gradient-to-br from-success to-success-light rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-success/20"
                 aria-hidden="true"
               >
-                <svg
-                  className="w-7 h-7 text-success"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                  />
-                </svg>
+                <TrendingUp className="w-7 h-7 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">
                 Actualis&eacute; en 2025
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-500 leading-relaxed">
                 Le march&eacute; de l&rsquo;IA &eacute;volue vite. Nos
                 comparatifs sont r&eacute;guli&egrave;rement mis &agrave; jour pour
                 refl&eacute;ter les derni&egrave;res nouveaut&eacute;s et tarifs.
@@ -153,27 +134,15 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div
-                className="w-14 h-14 bg-warning/10 rounded-xl flex items-center justify-center mx-auto mb-4"
+                className="w-14 h-14 bg-gradient-to-br from-warm to-warm-dark rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-warm/20"
                 aria-hidden="true"
               >
-                <svg
-                  className="w-7 h-7 text-warning"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
-                  />
-                </svg>
+                <Globe className="w-7 h-7 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">
                 Adapt&eacute; au march&eacute; fran&ccedil;ais
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-500 leading-relaxed">
                 Nous mettons en avant les outils disponibles en fran&ccedil;ais, les
                 solutions conformes au RGPD et les acteurs europ&eacute;ens comme
                 Mistral AI.
@@ -184,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-16 md:py-20 bg-gray-50">
+      <section id="faq" className="py-20 md:py-28 border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4">
           <FAQ items={HOME_FAQ} />
         </div>

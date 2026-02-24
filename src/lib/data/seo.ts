@@ -7,7 +7,7 @@ export const seo: Category = {
   metaTitle: "Meilleure IA SEO 2025 | Comparatif Referencement",
   metaDescription:
     "Comparatif des meilleures IA pour le SEO en 2025 : Surfer SEO, SEMrush, Jasper, Frase et MarketMuse. Optimisez votre referencement naturel avec l'IA.",
-  icon: "\ud83d\udd0d",
+  icon: "Search",
   description:
     "Comparez les meilleurs outils d'intelligence artificielle pour ameliorer votre referencement naturel. Optimisation de contenu, recherche de mots-cles, analyse de la concurrence : trouvez l'IA SEO adaptee a vos objectifs.",
   heroDescription:

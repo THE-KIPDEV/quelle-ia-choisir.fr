@@ -15,11 +15,14 @@ const CATEGORY_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-gray-300">
+    <footer className="bg-linear-to-b from-primary to-primary-dark text-gray-300">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-white font-bold text-lg mb-3">Quelle IA Choisir ?</h3>
+            <h3 className="text-lg font-bold mb-3">
+              <span className="gradient-text">Quelle IA Choisir</span>
+              <span className="text-white"> ?</span>
+            </h3>
             <p className="text-sm leading-relaxed">
               Le guide comparatif ind&eacute;pendant pour trouver l&rsquo;intelligence artificielle
               adapt&eacute;e &agrave; vos besoins. Analyses d&eacute;taill&eacute;es, avis objectifs et
@@ -32,7 +35,7 @@ export default function Footer() {
             <ul className="text-sm space-y-1.5">
               {CATEGORY_LINKS.map((cat) => (
                 <li key={cat.slug}>
-                  <Link href={`/${cat.slug}`} className="hover:text-accent-light transition-colors">
+                  <Link href={`/${cat.slug}`} className="hover:text-white transition-colors">
                     {cat.label}
                   </Link>
                 </li>
@@ -42,28 +45,40 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-bold text-lg mb-3">Nos partenaires</h3>
-            <ul className="text-sm space-y-2">
-              <li>
-                <a href="https://kipagent.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent-light transition-colors">
-                  KipAgent &mdash; Agents IA sur mesure
-                </a>
-              </li>
-              <li>
-                <a href="https://studio-cortex.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent-light transition-colors">
-                  Studio Cortex &mdash; Formation IA
-                </a>
-              </li>
-              <li>
-                <a href="https://smart-bot.io" target="_blank" rel="noopener noreferrer" className="hover:text-accent-light transition-colors">
-                  Smart-Bot &mdash; Chatbot IA
-                </a>
-              </li>
-            </ul>
+            <div className="space-y-2">
+              <a
+                href="https://kipagent.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors"
+              >
+                <span className="text-sm font-medium text-white">KipAgent</span>
+                <span className="block text-xs text-gray-400 mt-0.5">Agents IA sur mesure</span>
+              </a>
+              <a
+                href="https://studio-cortex.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors"
+              >
+                <span className="text-sm font-medium text-white">Studio Cortex</span>
+                <span className="block text-xs text-gray-400 mt-0.5">Formation IA</span>
+              </a>
+              <a
+                href="https://smart-bot.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors"
+              >
+                <span className="text-sm font-medium text-white">Smart-Bot</span>
+                <span className="block text-xs text-gray-400 mt-0.5">Chatbot IA</span>
+              </a>
+            </div>
 
             <h3 className="text-white font-bold text-lg mt-6 mb-3">Liens</h3>
             <ul className="text-sm space-y-1.5">
               <li>
-                <Link href="/mentions-legales" className="hover:text-accent-light transition-colors">
+                <Link href="/mentions-legales" className="hover:text-white transition-colors">
                   Mentions l&eacute;gales
                 </Link>
               </li>
@@ -71,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-6 text-center text-xs text-gray-400">
+        <div className="border-t border-white/5 mt-8 pt-6 text-center text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} quelle-ia-choisir.fr &mdash; Tous droits r&eacute;serv&eacute;s</p>
         </div>
       </div>

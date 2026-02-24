@@ -7,7 +7,7 @@ export const musique: Category = {
   metaTitle: "Meilleure IA Musique 2025 | Comparatif Complet",
   metaDescription:
     "Comparatif des meilleures IA pour creer de la musique en 2025 : Suno, Udio, AIVA et ElevenLabs Music. Generez des morceaux originaux facilement.",
-  icon: "\ud83c\udfb5",
+  icon: "Music",
   description:
     "Comparez les meilleurs outils d'intelligence artificielle pour la creation musicale. Generation de morceaux, composition, voix synthetiques : trouvez l'IA musicale adaptee a vos projets creatifs.",
   heroDescription:
