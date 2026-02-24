@@ -7,27 +7,27 @@ const HOME_FAQ = [
   {
     question: "Quelle est la meilleure IA en 2025 ?",
     answer:
-      "Il n\u2019existe pas de \u00ab meilleure IA \u00bb universelle. Le choix d\u00e9pend de votre besoin : ChatGPT et Claude excellent pour la r\u00e9daction, Midjourney domine pour les images, GitHub Copilot et Cursor sont les r\u00e9f\u00e9rences pour le code. Notre guide d\u00e9taille les meilleurs outils par cat\u00e9gorie pour vous aider \u00e0 faire le bon choix.",
+      "\u00c7a d\u00e9pend de ce que vous cherchez. Pour \u00e9crire, ChatGPT et Claude sont au coude-\u00e0-coude. Pour g\u00e9n\u00e9rer des images, Midjourney a encore une longueur d\u2019avance. Pour coder, GitHub Copilot et Cursor sont devenus incontournables. On d\u00e9taille chaque cat\u00e9gorie dans nos comparatifs.",
   },
   {
     question: "Les IA sont-elles gratuites ?",
     answer:
-      "La plupart des IA proposent une version gratuite limit\u00e9e et des plans payants pour un acc\u00e8s complet. ChatGPT, Claude, Gemini et Mistral offrent tous un acc\u00e8s gratuit. Les versions premium co\u00fbtent g\u00e9n\u00e9ralement entre 10 et 30 \u20ac par mois et d\u00e9bloquent les mod\u00e8les les plus performants.",
+      "Presque toutes proposent une version gratuite, mais limit\u00e9e (nombre de messages, mod\u00e8le moins performant). ChatGPT, Claude, Gemini, Mistral\u2026 tous ont un acc\u00e8s libre. Pour d\u00e9bloquer les meilleurs mod\u00e8les, comptez entre 10 et 30 \u20ac/mois.",
   },
   {
-    question: "Quelle IA choisir pour un usage professionnel ?",
+    question: "Quelle IA pour un usage pro ?",
     answer:
-      "Pour un usage professionnel, privil\u00e9giez les outils avec des garanties de confidentialit\u00e9 et de conformit\u00e9 RGPD. Mistral (entreprise fran\u00e7aise) h\u00e9berge les donn\u00e9es en Europe. Microsoft 365 Copilot et Google Gemini s\u2019int\u00e8grent directement dans les suites bureautiques. Le choix d\u00e9pend aussi de votre secteur d\u2019activit\u00e9.",
+      "Si le RGPD vous concerne, regardez du c\u00f4t\u00e9 de Mistral (fran\u00e7ais, donn\u00e9es h\u00e9berg\u00e9es en Europe). Sinon, Microsoft 365 Copilot et Google Gemini s\u2019int\u00e8grent directement dans vos outils de bureau. Apr\u00e8s, tout d\u00e9pend de votre m\u00e9tier et de vos besoins.",
   },
   {
-    question: "L\u2019IA va-t-elle remplacer mon m\u00e9tier ?",
+    question: "L\u2019IA va-t-elle remplacer mon job ?",
     answer:
-      "L\u2019IA est un outil d\u2019augmentation, pas de remplacement. Elle automatise les t\u00e2ches r\u00e9p\u00e9titives et vous permet de vous concentrer sur la cr\u00e9ativit\u00e9, la strat\u00e9gie et les relations humaines. Les professionnels qui ma\u00eetrisent l\u2019IA sont plus productifs et plus valoris\u00e9s sur le march\u00e9 du travail.",
+      "Peu probable. L\u2019IA automatise surtout les t\u00e2ches r\u00e9p\u00e9titives. Ceux qui savent s\u2019en servir gagnent du temps et sont plus efficaces \u2014 c\u2019est l\u00e0 que \u00e7a fait la diff\u00e9rence. C\u2019est un outil, pas un rempla\u00e7ant.",
   },
   {
-    question: "Comment choisir entre ChatGPT et Claude ?",
+    question: "ChatGPT ou Claude, lequel prendre ?",
     answer:
-      "ChatGPT (OpenAI) est le plus polyvalent avec un \u00e9cosyst\u00e8me riche (plugins, GPTs, DALL-E). Claude (Anthropic) excelle dans les textes longs, la nuance et la qualit\u00e9 du fran\u00e7ais. Pour la r\u00e9daction cr\u00e9ative et les analyses approfondies, Claude est souvent pr\u00e9f\u00e9r\u00e9. Pour un usage g\u00e9n\u00e9ral et la polyvalence, ChatGPT reste la r\u00e9f\u00e9rence.",
+      "ChatGPT est plus polyvalent : plugins, GPTs custom, g\u00e9n\u00e9ration d\u2019images avec DALL-E. Claude est meilleur sur les textes longs, les analyses nuanc\u00e9es et la qualit\u00e9 du fran\u00e7ais. En gros : ChatGPT pour toucher \u00e0 tout, Claude pour \u00e9crire et analyser.",
   },
 ];
 
@@ -64,15 +64,14 @@ export default function Home() {
             <span className="text-white"> ?</span>
             <br />
             <span className="text-xl md:text-2xl font-medium text-gray-300 mt-4 block leading-relaxed">
-              Le guide complet pour trouver l&rsquo;intelligence artificielle
-              adapt&eacute;e &agrave; vos besoins
+              On a test&eacute; les IA du march&eacute; pour vous aider &agrave;
+              trouver celle qu&rsquo;il vous faut
             </span>
           </h1>
           <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Comparez les meilleurs outils d&rsquo;IA en 2025 : r&eacute;daction,
-            g&eacute;n&eacute;ration d&rsquo;images, code, vid&eacute;o, SEO,
-            musique et bien plus. Des analyses d&eacute;taill&eacute;es, des avis
-            objectifs et des recommandations pour chaque usage.
+            R&eacute;daction, images, code, vid&eacute;o, SEO, musique&hellip;
+            On compare les outils IA cat&eacute;gorie par cat&eacute;gorie,
+            avec des avis honn&ecirc;tes et des recommandations concr&egrave;tes.
           </p>
         </div>
       </section>
@@ -81,11 +80,10 @@ export default function Home() {
       <section id="categories" className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-3">
-            Explorez nos comparatifs par cat&eacute;gorie
+            Comparatifs par cat&eacute;gorie
           </h2>
           <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
-            S&eacute;lectionnez une cat&eacute;gorie pour d&eacute;couvrir notre
-            analyse compl&egrave;te des meilleurs outils IA disponibles en 2025.
+            Choisissez votre domaine, on vous dit quel outil vaut le coup en 2025.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CATEGORIES.map((category) => (
@@ -109,11 +107,11 @@ export default function Home() {
               >
                 <CheckCircle className="w-7 h-7 text-white" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-2">Analyses objectives</h3>
+              <h3 className="font-bold text-gray-900 mb-2">On teste vraiment</h3>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Chaque outil est test&eacute; et &eacute;valu&eacute; selon des
-                crit&egrave;res pr&eacute;cis : qualit&eacute;, tarif, facilit&eacute;
-                d&rsquo;utilisation et support du fran&ccedil;ais.
+                Chaque outil est utilis&eacute; avant d&rsquo;&ecirc;tre not&eacute;.
+                On &eacute;value la qualit&eacute; des r&eacute;sultats, le prix,
+                la prise en main et le support du fran&ccedil;ais.
               </p>
             </div>
             <div className="text-center">
@@ -124,12 +122,12 @@ export default function Home() {
                 <TrendingUp className="w-7 h-7 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">
-                Actualis&eacute; en 2025
+                Mis &agrave; jour r&eacute;guli&egrave;rement
               </h3>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Le march&eacute; de l&rsquo;IA &eacute;volue vite. Nos
-                comparatifs sont r&eacute;guli&egrave;rement mis &agrave; jour pour
-                refl&eacute;ter les derni&egrave;res nouveaut&eacute;s et tarifs.
+                Dans l&rsquo;IA, tout bouge en permanence. On met nos comparatifs
+                &agrave; jour d&egrave;s qu&rsquo;un outil sort une mise &agrave; jour
+                majeure ou change ses tarifs.
               </p>
             </div>
             <div className="text-center">
@@ -140,12 +138,12 @@ export default function Home() {
                 <Globe className="w-7 h-7 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">
-                Adapt&eacute; au march&eacute; fran&ccedil;ais
+                Pens&eacute; pour la France
               </h3>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Nous mettons en avant les outils disponibles en fran&ccedil;ais, les
-                solutions conformes au RGPD et les acteurs europ&eacute;ens comme
-                Mistral AI.
+                On privil&eacute;gie les outils dispo en fran&ccedil;ais,
+                conformes au RGPD, et on met en lumi&egrave;re les acteurs
+                europ&eacute;ens comme Mistral AI.
               </p>
             </div>
           </div>
