@@ -65,13 +65,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <Script defer src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" />
-      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />
+        <Script defer src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" />
       </body>
     </html>
   );
