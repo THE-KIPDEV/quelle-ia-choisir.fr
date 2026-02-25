@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -64,6 +65,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <Script defer src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         <main>{children}</main>
