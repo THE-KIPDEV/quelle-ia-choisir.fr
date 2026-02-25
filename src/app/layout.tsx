@@ -69,7 +69,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <Script defer src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" />
+        <Script src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" strategy="beforeInteractive" />
       </body>
     </html>
   );
