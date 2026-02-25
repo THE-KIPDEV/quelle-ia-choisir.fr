@@ -53,7 +53,7 @@ export default function Footer() {
                 className="block bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors"
               >
                 <span className="text-sm font-medium text-white">KipAgent</span>
-                <span className="block text-xs text-gray-400 mt-0.5">Agents IA sur mesure</span>
+                <span className="block text-xs text-gray-400 mt-0.5">Chatbot IA sur mesure</span>
               </a>
               <a
                 href="https://studio-cortex.com"
@@ -71,7 +71,7 @@ export default function Footer() {
                 className="block bg-white/5 rounded-lg p-3 hover:bg-white/10 transition-colors"
               >
                 <span className="text-sm font-medium text-white">Smart-Bot</span>
-                <span className="block text-xs text-gray-400 mt-0.5">Chatbot IA</span>
+                <span className="block text-xs text-gray-400 mt-0.5">Chat multi-IA</span>
               </a>
             </div>
 
