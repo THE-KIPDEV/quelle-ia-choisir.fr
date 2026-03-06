@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ConversionWidgets from "@/components/ConversionWidgets";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,6 +70,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <ConversionWidgets />
         <Script src="https://kipstats.com/tracker.js" data-site="kp_f13bb736" strategy="beforeInteractive" />
       </body>
     </html>
